@@ -1,0 +1,139 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+}
+.attribution { 
+    font-size: 1rem; 
+    text-align: center;
+    margin-top: 30px; 
+}
+
+.attribution a { 
+    color: var(--magenta); 
+}
+
+body {
+    background: url("images/bg-desktop.svg")  var(--violet);
+    padding: 3rem 4rem;
+    overflow: hidden; 
+}
+
+.logo {
+    height: 2.5rem;
+    width: 15rem;
+    position: absolute;
+    left: 2rem;
+}
+
+#main-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+
+#main-part img {
+    height: 25rem;
+    width: 30rem;
+}
+
+#main-part div {
+    width: 30rem;
+}
+
+#main-part div h1 {
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-part div p {
+    font-weight: 400;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-part div button {
+    width: 9.5rem;
+    background-color: white;
+    color: var(--violet);
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 2px grey;
+}
+
+#main-part div button:hover {
+    background-color: var(--magenta);
+    color: white;
+}
+
+body span {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    position: absolute;
+    right: 4rem;
+}
+
+body span img {
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px 5px;
+}
+
+svg {
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px 5px;
+    fill: white;
+}
+
+svg:hover {
+    fill: var(--magenta);
+    border: 1px solid var(--magenta);
+}
+
+@media  (max-width: 1104px) {
+    body {
+        background: url("images/bg-mobile.svg") no-repeat var(--violet); 
+        padding: 2rem 2rem;
+        overflow: auto;
+    }
+
+    .logo {
+        position: absolute;
+        left: 0rem;
+    }
+
+    #main-part {
+        flex-direction: column;
+        width: 100%;
+        margin: auto; 
+        justify-content: space-between;
+        /* border: 2px solid black; */
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    #main-part img {
+        height: auto;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    #main-part > div {
+        width: auto;
+    }
+
+    body span {
+        position: relative;
+        margin: auto;
+        margin-top: 60px;
+        margin-left: 50%;
+    }
+}
